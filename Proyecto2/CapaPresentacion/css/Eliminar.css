@@ -1,0 +1,177 @@
+﻿/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el contenido se centre verticalmente */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    max-width: 90%; /* El contenedor ocupa casi todo el ancho de la pantalla */
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+
+/* Título */
+h1 {
+    font-size: 1.8em;
+    color: #28a745;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Sección de eliminar */
+.delete-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
+    gap: 25px; /* Espaciado entre los elementos */
+    margin-bottom: 40px;
+    justify-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Elemento individual */
+.delete-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .delete-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+/* Input para ID */
+.input-id {
+    padding: 12px 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.95em;
+    width: 100%; /* Ocupa el ancho del contenedor */
+    box-sizing: border-box;
+}
+
+    .input-id:focus {
+        border-color: #28a745;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+    }
+
+/* Botón */
+.btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%; /* Ocupa el ancho del contenedor */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+    .btn:hover {
+        background-color: #218838;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+/* DataGrid */
+.datagrid-container {
+    margin-top: 40px; /* Espaciado superior para separar de los botones */
+    overflow-x: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.datagrid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .datagrid th, .datagrid td {
+        padding: 12px 15px;
+        border: 1px solid #e9ecef;
+        text-align: left;
+    }
+
+    .datagrid th {
+        background-color: #f1f8ff;
+        font-weight: 600;
+        color: #495057;
+        padding: 15px;
+        border: 1px solid #e9ecef;
+        text-align: left;
+        position: sticky;
+        top: 0;
+    }
+
+    .datagrid td {
+        padding: 12px 15px;
+        text-align: left;
+        color: #495057;
+    }
+
+    .datagrid tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    .datagrid tr:hover {
+        background-color: #f1f8ff;
+    }
+
+/* Responsivo: Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .delete-section {
+        grid-template-columns: 1fr; /* Una columna por fila en pantallas pequeñas */
+    }
+}
+
+.extra-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+    .extra-link a {
+        text-decoration: none;
+        color: white;
+        background-color: #4CAF50;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 1em;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .extra-link a:hover {
+            background-color: #45a049;
+        }

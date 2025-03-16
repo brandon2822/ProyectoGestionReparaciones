@@ -1,0 +1,82 @@
+﻿/* Diseño general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Párrafo de bienvenida */
+p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Menú de navegación */
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1.1em;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    .menu-item:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Estilo del GridView (DataGrid) */
+.datagrid-container {
+    margin-top: 30px;
+}
+
+.datagrid {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .datagrid th, .datagrid td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .datagrid th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    .datagrid tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .datagrid tr:hover {
+        background-color: #f1f1f1;
+    }

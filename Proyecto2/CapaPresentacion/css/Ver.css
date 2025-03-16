@@ -1,0 +1,117 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.extra-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+    .extra-link a {
+        text-decoration: none;
+        color: white;
+        background-color: #4CAF50;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 1em;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .extra-link a:hover {
+            background-color: #45a049;
+        }
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.action-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+    .action-button:hover {
+        background-color: #388E3C;
+    }
+
+.grid-container {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+.grid-view {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+    .grid-view th, .grid-view td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    .grid-view th {
+        background-color: #f8f8f8;
+        font-weight: bold;
+    }
+
+    .grid-view tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .grid-view tr:hover {
+        background-color: #f1f1f1;
+    }
+
+@media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+

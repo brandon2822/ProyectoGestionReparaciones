@@ -1,0 +1,120 @@
+﻿/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Hipervínculo adicional */
+.extra-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+    .extra-link a {
+        text-decoration: none;
+        color: white;
+        background-color: #4CAF50;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 1em;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .extra-link a:hover {
+            background-color: #45a049;
+        }
+
+/* Contenedor principal */
+.container {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 2em;
+    color: #4CAF50;
+    text-align: center;
+}
+
+/* Campos de texto */
+.textboxs {
+    margin-bottom: 20px;
+}
+
+    .textboxs label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #4CAF50;
+    }
+
+.input-box {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+/* Estilo del GridView */
+.datagrid-container {
+    margin-top: 20px;
+}
+
+.datagrid {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .datagrid th, .datagrid td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .datagrid th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .datagrid tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .datagrid tr:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Botón "Añadir" */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-button {
+    background-color: #4CAF50; /* Verde vibrante */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .add-button:hover {
+        background-color: #45a049; /* Verde un poco más oscuro al pasar el mouse */
+    }
