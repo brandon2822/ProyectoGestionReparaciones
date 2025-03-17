@@ -86,6 +86,7 @@
     <Content Include="CapaPresentacion\css\Ver.css" />
     <Content Include="CapaPresentacion\Eliminar.aspx" />
     <Content Include="CapaPresentacion\Inicio.aspx" />
+    <Content Include="CapaPresentacion\Login.aspx" />
     <Content Include="CapaPresentacion\Ver.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -93,6 +94,7 @@
     <Compile Include="CapaDatos\Class_Asignaciones_data.cs" />
     <Compile Include="CapaDatos\Class_DetalleRep_data.cs" />
     <Compile Include="CapaDatos\Class_Equipos_data.cs" />
+    <Compile Include="CapaDatos\Class_LogIn_data.cs" />
     <Compile Include="CapaDatos\Class_Reparaciones_data.cs" />
     <Compile Include="CapaDatos\Class_Tecnicos,data.cs" />
     <Compile Include="CapaDatos\Class_Usuarios_data.cs" />
@@ -112,6 +114,7 @@
     <Compile Include="CapaLogica\Logica_Eliminar\ClassLogicaEliminarTecnico.cs" />
     <Compile Include="CapaLogica\Logica_Eliminar\ClassLogicaEliminarUsuario.cs" />
     <Compile Include="CapaLogica\Logica_Inicio\ClassInicio.cs" />
+    <Compile Include="CapaLogica\Logica_LogIN\ClassLogicaLogIn.cs" />
     <Compile Include="CapaLogica\Logica_Ver\Class_VerAsignaciones.cs" />
     <Compile Include="CapaLogica\Logica_Ver\Class_VerDetalles.cs" />
     <Compile Include="CapaLogica\Logica_Ver\Class_VerEquipo.cs" />
@@ -208,6 +211,13 @@
     </Compile>
     <Compile Include="CapaPresentacion\Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPresentacion\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="CapaPresentacion\Ver.aspx.cs">
       <DependentUpon>Ver.aspx</DependentUpon>
